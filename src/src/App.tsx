@@ -1,9 +1,9 @@
 import './App.css'
-import MonacoPreview from './MonacoPreview'
-import styled from "styled-components";
 import "sanitize.css"
+import styled from "styled-components";
 import { useState } from 'react';
 import MakdownPreview from './MarkdownPreview';
+import MonacoPreview from './MonacoPreview'
 
 const Wrapper = styled.div`
   display: flex;
