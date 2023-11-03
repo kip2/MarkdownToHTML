@@ -1,22 +1,11 @@
 import './App.css'
-// import Markdown from 'react-markdown'
-import ReactMarkdown from "react-markdown";
-
-const markdown = `# Heading
-
-This is a *markdown* example.
-
-- List item 1
-- List item 2
-
-[OpenAI](https://openai.com)
-`;
+import MakdownTransfer from './Markdown';
 
 function App() {
 
   return (
     <>
-        <ReactMarkdown children={markdown}/>
+      <MakdownTransfer/>
     </>
   );
 
