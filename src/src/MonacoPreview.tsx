@@ -1,6 +1,5 @@
 import './App.css'
 import Editor from "@monaco-editor/react"
-import { useEffect } from 'react';
 
 function MonacoPreview({ editorValue, setEditorValue }) {
 
@@ -11,10 +10,6 @@ function MonacoPreview({ editorValue, setEditorValue }) {
   function showValue() {
     alert(editorValue)
   }
-
-  useEffect(() => {
-    // alert(editorValue)
-  }, [editorValue])
 
 
   return (
