@@ -3,10 +3,6 @@ import Editor from "@monaco-editor/react"
 
 function MonacoPreview({ editorValue, setEditorValue }) {
 
-  function handleEditorChange(value, event) {
-    setEditorValue(value);
-  }
-
   return (
     <>
     <div>
@@ -16,7 +12,9 @@ function MonacoPreview({ editorValue, setEditorValue }) {
             theme="vs-dark"
             defaultLanguage="markdown" 
             value={editorValue}
-            onChange={handleEditorChange}
+            onChange={
+                (value:string, e:IModelContentChangeEvent) => setEditorValue(value)
+            }
         />
     </div>
     </>
