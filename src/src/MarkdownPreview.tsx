@@ -6,12 +6,12 @@ import styled from "styled-components";
     width: 50vw;
     text-align: left;
     padding-left:20px;
+    border: solid 1px black;
   `;
 
 export default function MakdownPreview({ editorValue }) {
     return (
         <Wrapper>
-            {/* <ReactMarkdown children={markdown} /> */}
             <ReactMarkdown children={editorValue} />
         </Wrapper>
     );
