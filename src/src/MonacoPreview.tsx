@@ -1,14 +1,10 @@
 import './App.css'
 import Editor from "@monaco-editor/react"
-import { useRef, useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
-function MonacoPreview() {
-    const editorRef = useRef("");
-    const [editorValue, setEditorValue] = useState("//some comment");
-
-  function handleEditorDidMount(editor) {
-    editorRef.current = editor;
-  }
+function MonacoPreview({ editorValue, setEditorValue }) {
+    // const editorRef = useRef("");
+    // const [editorValue, setEditorValue] = useState("//some comment");
 
   function handleEditorChange(value, event) {
     setEditorValue(value);
@@ -34,7 +30,6 @@ function MonacoPreview() {
             defaultLanguage="markdown" 
             value={editorValue}
             onChange={handleEditorChange}
-            onMount={handleEditorDidMount}
         />
     </div>
     </>
