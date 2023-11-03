@@ -5,13 +5,12 @@ import "sanitize.css"
 import { useState } from 'react';
 import MakdownPreview from './MarkdownPreview';
 
-
 const Wrapper = styled.div`
   display: flex;
 `;
 
 function App() {
-  const [editorValue, setEditorValue] = useState(
+  const [editorValue, setEditorValue] = useState<string>(
 `//some comment
 
 
