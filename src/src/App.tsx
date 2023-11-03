@@ -1,10 +1,12 @@
 import './App.css'
-import MarkdownBuf from './MarkdownBuf';
+import MonacoPreview from './MonacoPreview'
 
 function App() {
   return (
-    <MarkdownBuf />
-  );
+    <MonacoPreview />
+  )
 }
 
+
 export default App
+
