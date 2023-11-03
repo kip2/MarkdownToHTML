@@ -1,25 +1,10 @@
 import './App.css'
-import MakdownTransfer from './MarkdownTransfer';
-import styled from "styled-components";
+import MarkdownBuf from './MarkdownBuf';
 
 function App() {
-  const Wrapper = styled.div`
-    display: flex;
-    justify-content: end;
-  `;
-  const Hello = styled.h1`
-    height: 90vh;
-    width: 50vw;
-  `;
   return (
-    <>
-      <Wrapper>
-        <Hello>Hello</Hello>
-        <MakdownTransfer/>
-      </Wrapper>
-    </>
+    <MarkdownBuf />
   );
-
 }
 
 export default App
