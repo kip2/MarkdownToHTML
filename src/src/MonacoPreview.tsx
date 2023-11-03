@@ -3,8 +3,6 @@ import Editor from "@monaco-editor/react"
 import { useEffect } from 'react';
 
 function MonacoPreview({ editorValue, setEditorValue }) {
-    // const editorRef = useRef("");
-    // const [editorValue, setEditorValue] = useState("//some comment");
 
   function handleEditorChange(value, event) {
     setEditorValue(value);
