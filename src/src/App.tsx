@@ -11,7 +11,8 @@ const Wrapper = styled.div`
 `;
 
 function App() {
-  const [editorValue, setEditorValue] = useState(`//some comment
+  const [editorValue, setEditorValue] = useState(
+`//some comment
 
 
 # Heading
@@ -24,7 +25,7 @@ This is a *markdown* example.
 ---
 
 [Recursion](https://recursionist.io/)
-  `);
+`);
 
   return (
     <>
