@@ -20,7 +20,9 @@ function App() {
           editorValue={editorValue}
           setEditorValue={setEditorValue}
         />
-        <MakdownTransfer />
+        <MakdownTransfer 
+          editorValue={editorValue}
+        />
       </Wrapper>
     </>
   )

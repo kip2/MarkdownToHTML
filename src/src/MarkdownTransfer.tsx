@@ -1,11 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
 
-// const StyledMarkdownPreview = styled.div`
-//     height: 90vh;
-//     width: 50vw;
-// `;
-
   const Wrapper = styled.div`
     height: 90vh;
     width: 50vw;
@@ -23,10 +18,11 @@ This is a *markdown* example.
 [OpenAI](https://openai.com)
 `;
 
-export default function MakdownTransfer() {
+export default function MakdownTransfer({ editorValue }) {
     return (
         <Wrapper>
-            <ReactMarkdown children={markdown} />
+            {/* <ReactMarkdown children={markdown} /> */}
+            <ReactMarkdown children={editorValue} />
         </Wrapper>
     );
 }
