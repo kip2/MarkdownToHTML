@@ -9,6 +9,8 @@ import styled from "styled-components";
   const Wrapper = styled.div`
     height: 90vh;
     width: 50vw;
+    text-align: left;
+    padding-left:20px;
   `;
 
 const markdown = `# Heading
@@ -24,8 +26,7 @@ This is a *markdown* example.
 export default function MakdownTransfer() {
     return (
         <Wrapper>
-
-        <ReactMarkdown children={markdown} />
+            <ReactMarkdown children={markdown} />
         </Wrapper>
     );
 }

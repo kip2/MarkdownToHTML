@@ -15,15 +15,17 @@ function MonacoPreview() {
 
   return (
     <>
-      <button onClick={showValue}>Show Value</button>
-      <Editor 
-        height="90vh" 
-        width="50vw" 
-        theme="vs-dark"
-        defaultLanguage="markdown" 
-        defaultValue="// some comment" 
-        onMount={handleEditorDidMount}
-      />
+    <div>
+        <button onClick={showValue}>Show Value</button>
+        <Editor 
+            height="90vh" 
+            width="50vw" 
+            theme="vs-dark"
+            defaultLanguage="markdown" 
+            defaultValue="// some comment" 
+            onMount={handleEditorDidMount}
+        />
+    </div>
     </>
   )
 }
