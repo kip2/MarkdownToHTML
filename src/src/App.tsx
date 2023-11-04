@@ -6,6 +6,7 @@ import MakdownPreview from './MarkdownPreview';
 import MonacoPreview from './MonacoPreview'
 import HTMLPreview from './HTMLPreview';
 import DownloadButton from "./DownloadButton";
+import { ExampleTemplate } from './ExampleTemplate';
 
 const Wrapper = styled.div`
   display: flex;
@@ -31,22 +32,7 @@ const Title = styled.h1`
 function App() {
   const [isMarkdownHidden, setIsMarkdownHidden] = useState(false);
 
-  const [editorValue, setEditorValue] = useState<string>(
-`# Heading
-
-This is a *markdown* example.
-
-- List item 1
-- List item 2
-
-\`\`\`js
-console.log("Hello World");
-\`\`\`
-
----
-
-[Recursion](https://recursionist.io/)
-`);
+  const [editorValue, setEditorValue] = useState<string>(ExampleTemplate);
 
   return (
     <>
