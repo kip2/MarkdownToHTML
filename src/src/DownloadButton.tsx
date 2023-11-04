@@ -1,4 +1,10 @@
 import jsxToHtml from "./jsxToHtml"
+import styled from "styled-components";
+
+const Button = styled.button`
+    margin-right:10px;
+    margin-bottom:10px;
+`;
 
 export default function DownloadButton({ editorValue }) {
     const handleDownload = () => {
@@ -17,8 +23,8 @@ export default function DownloadButton({ editorValue }) {
 
     }
     return (
-        <button onClick={handleDownload}>
+        <Button onClick={handleDownload}>
             Download HTML
-        </button>
+        </Button>
     );
 }

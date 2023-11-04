@@ -3,7 +3,6 @@ import styled from "styled-components";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
-import DownloadButton from "./DownloadButton";
 
   const Wrapper = styled.div`
     height: 90vh;
@@ -18,9 +17,6 @@ import DownloadButton from "./DownloadButton";
 export default function MakdownPreview({ editorValue }) {
     return (
         <Wrapper>
-            <DownloadButton 
-              editorValue={editorValue}
-            />
             <ReactMarkdown 
               remarkPlugins={[remarkGfm]}
               children={editorValue} 
