@@ -16,6 +16,10 @@ const Buttons = styled.div`
   justify-content: center;
 `;
 
+const ToggleButton = styled.button`
+  margin-bottom: 10px;
+`;
+
 const Title = styled.h1`
   font-size: 36px;
   padding:0px;
@@ -49,13 +53,13 @@ console.log("Hello World");
       <Title >Markdown to HTML</Title>
       <Buttons>
         <DownloadButton editorValue={editorValue} />
-        <button
+        <ToggleButton
           onClick={() => {setIsMarkdownHidden(!isMarkdownHidden)}}
         >
           {
             !isMarkdownHidden ? "HTMLに切り替え" : "Markdownに切り替え"
           }
-        </button>
+        </ToggleButton>
       </Buttons>
       <Wrapper>
         <MonacoPreview 
