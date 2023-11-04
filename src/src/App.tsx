@@ -12,10 +12,7 @@ const Wrapper = styled.div`
 
 function App() {
   const [editorValue, setEditorValue] = useState<string>(
-`//some comment
-
-
-# Heading
+`# Heading
 
 This is a *markdown* example.
 

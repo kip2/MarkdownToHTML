@@ -19,7 +19,7 @@ function jsxToHtml(jsx: React.ReactElement): string {
 
 
 export default function HTMLPreview({ editorValue }) {
-  let resultHtml = jsxToHtml(
+  const resultHtml = jsxToHtml(
             <ReactMarkdown 
               remarkPlugins={[remarkGfm]}
               children={editorValue} 
