@@ -7,6 +7,8 @@ import styled from "styled-components";
     text-align: left;
     padding-left:20px;
     border: solid 1px black;
+    background-color: white;
+    overflow-y: auto;
   `;
 
 export default function MakdownPreview({ editorValue }) {
