@@ -1,6 +1,5 @@
 import './App.css'
 import Editor from "@monaco-editor/react"
-import styled from "styled-components";
 
 function MonacoPreview({ editorValue, setEditorValue }) {
   return (
