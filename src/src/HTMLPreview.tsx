@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
 import remarkGfm from "remark-gfm";
-import { renderToStaticMarkup } from "react-dom/server";
+import jsxToHtml from "./jsxToHtml";
 
   const Wrapper = styled.div`
     height: 90vh;
@@ -12,11 +12,6 @@ import { renderToStaticMarkup } from "react-dom/server";
     background-color: white;
     overflow-y: auto;
   `;
-
-function jsxToHtml(jsx: React.ReactElement): string {
-  return renderToStaticMarkup(jsx);
-}
-
 
 export default function HTMLPreview({ editorValue }) {
   const resultHtml = jsxToHtml(
