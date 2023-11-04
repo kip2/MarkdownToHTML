@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
+import remarkGfm from "remark-gfm";
 
   const Wrapper = styled.div`
     height: 90vh;
@@ -14,7 +15,10 @@ import styled from "styled-components";
 export default function MakdownPreview({ editorValue }) {
     return (
         <Wrapper>
-            <ReactMarkdown children={editorValue} />
+            <ReactMarkdown 
+              remarkPlugins={[remarkGfm]}
+              children={editorValue} 
+            />
         </Wrapper>
     );
 }
