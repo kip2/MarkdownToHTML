@@ -10,6 +10,13 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
+const Title = styled.h1`
+  padding:0px;
+  margin:0px;
+  margin-bottom:10px;
+  color: #000080;
+`;
+
 function App() {
   const [editorValue, setEditorValue] = useState<string>(
 `# Heading
@@ -30,6 +37,7 @@ console.log("Hello World");
 
   return (
     <>
+      <Title >Markdown to HTML</Title>
       <Wrapper>
         <MonacoPreview 
           editorValue={editorValue}
