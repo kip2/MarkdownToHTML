@@ -8,7 +8,6 @@ function MonacoPreview({ editorValue, setEditorValue }) {
         <Editor 
             height="90vh" 
             width="50vw" 
-            // theme="vs-dark"
             defaultLanguage="markdown" 
             value={editorValue}
             onChange={
