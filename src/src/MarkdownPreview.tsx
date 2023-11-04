@@ -1,6 +1,8 @@
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
 import remarkGfm from "remark-gfm";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
   const Wrapper = styled.div`
     height: 90vh;
@@ -18,6 +20,25 @@ export default function MakdownPreview({ editorValue }) {
             <ReactMarkdown 
               remarkPlugins={[remarkGfm]}
               children={editorValue} 
+              components={{
+                code(props) {
+                  const {children, className, node, ...rest} = props
+                  const match = /language-(\w+)/.exec(className || '')
+                  return match ? (
+                    <SyntaxHighlighter
+                      {...rest}
+                      children={String(children).replace(/\n$/,'')}
+                      style={coy}
+                      language={match[1]}
+                      PreTag="div"
+                    />
+                  ):(
+                    <code {...rest} className={className}>
+                      {children}
+                    </code>
+                  )
+                }
+              }}
             />
         </Wrapper>
     );

@@ -22,6 +22,10 @@ This is a *markdown* example.
 - List item 1
 - List item 2
 
+\`\`\`js
+console.log("Hello World");
+\`\`\`
+
 ---
 
 [Recursion](https://recursionist.io/)
