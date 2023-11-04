@@ -25,6 +25,8 @@ const Title = styled.h1`
 `;
 
 function App() {
+  const [isMarkdownHidden, setIsMarkdownHidden] = useState(false);
+
   const [editorValue, setEditorValue] = useState<string>(
 `# Heading
 
@@ -46,9 +48,14 @@ console.log("Hello World");
     <>
       <Title >Markdown to HTML</Title>
       <Buttons>
-      <DownloadButton 
-        editorValue={editorValue}
-      />
+        <DownloadButton editorValue={editorValue} />
+        <button
+          onClick={() => {setIsMarkdownHidden(!isMarkdownHidden)}}
+        >
+          {
+            !isMarkdownHidden ? "HTMLに切り替え" : "Markdownに切り替え"
+          }
+        </button>
       </Buttons>
       <Wrapper>
         <MonacoPreview 
@@ -57,9 +64,11 @@ console.log("Hello World");
         />
         <MakdownPreview 
           editorValue={editorValue}
+          isMarkdownHidden={isMarkdownHidden}
         />
         <HTMLPreview 
           editorValue={editorValue}
+          isMarkdownHidden={isMarkdownHidden}
         />
       </Wrapper>
     </>

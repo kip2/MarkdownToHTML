@@ -14,9 +14,9 @@ import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
     overflow-y: auto;
   `;
 
-export default function MakdownPreview({ editorValue }) {
+export default function MakdownPreview({ editorValue, isMarkdownHidden=false }) {
     return (
-        <Wrapper>
+        <Wrapper hidden={isMarkdownHidden}>
             <ReactMarkdown 
               remarkPlugins={[remarkGfm]}
               children={editorValue} 

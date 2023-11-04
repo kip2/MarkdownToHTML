@@ -13,7 +13,7 @@ import jsxToHtml from "./jsxToHtml";
     overflow-y: auto;
   `;
 
-export default function HTMLPreview({ editorValue }) {
+export default function HTMLPreview({ editorValue, isMarkdownHidden=true }) {
   const resultHtml = jsxToHtml(
             <ReactMarkdown 
               remarkPlugins={[remarkGfm]}
@@ -21,7 +21,7 @@ export default function HTMLPreview({ editorValue }) {
             />
   );
     return (
-        <Wrapper>
+        <Wrapper hidden={!isMarkdownHidden}>
           {resultHtml}
         </Wrapper>
     );
