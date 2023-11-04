@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useState } from 'react';
 import MakdownPreview from './MarkdownPreview';
 import MonacoPreview from './MonacoPreview'
+import HTMLPreview from './HTMLPreview';
 
 const Wrapper = styled.div`
   display: flex;
@@ -34,6 +35,9 @@ This is a *markdown* example.
           setEditorValue={setEditorValue}
         />
         <MakdownPreview 
+          editorValue={editorValue}
+        />
+        <HTMLPreview 
           editorValue={editorValue}
         />
       </Wrapper>
