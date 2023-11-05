@@ -39,12 +39,8 @@ function App() {
       <Title >Markdown to HTML</Title>
       <Buttons>
         <DownloadButton editorValue={editorValue} />
-        <ToggleButton
-          onClick={() => {setIsMarkdownHidden(!isMarkdownHidden)}}
-        >
-          {
-            !isMarkdownHidden ? "HTMLに切り替え" : "Markdownに切り替え"
-          }
+        <ToggleButton onClick={() => {setIsMarkdownHidden(!isMarkdownHidden)}} >
+          { !isMarkdownHidden ? "HTMLに切り替え" : "Markdownに切り替え" }
         </ToggleButton>
       </Buttons>
       <Preview>
