@@ -19,7 +19,7 @@ github markdownの形式に対応しています(プラグイン依存のため�
 
 左のスペースにMarkdownで書き込みを行うと、HTMLに変換したものが右枠に表示されます
 
-![参考イメージ](/doc/image.gif)
+![参考イメージ](/doc/image3.png)
 
 ## Markdownについて
 
@@ -53,6 +53,8 @@ GithubのMarkdown形式の入力に対応しています
 - Preview(ブラウザでHTMLファイルを開いた形式)
 
 の、2つの形式で表示を切り替えることができます
+
+[切り替えボタン参考アニメーション](/doc/image2.gif)
 
 ---
 
