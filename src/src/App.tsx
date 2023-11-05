@@ -30,9 +30,9 @@ const Title = styled.h1`
 `;
 
 function App() {
-  const [isMarkdownHidden, setIsMarkdownHidden] = useState(false);
+  const [isMarkdownHidden, setIsMarkdownHidden] = useState<boolean>(false);
 
-  const [editorValue, setEditorValue] = useState<string>(ExampleTemplate);
+  const [editorValue, setEditorValue] = useState<string | any>(ExampleTemplate);
 
   return (
     <>

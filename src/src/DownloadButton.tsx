@@ -6,7 +6,11 @@ const Button = styled.button`
     margin-bottom:10px;
 `;
 
-export default function DownloadButton({ editorValue }) {
+type DownloadButtonProps = {
+    editorValue:React.ReactElement
+}
+
+export default function DownloadButton({ editorValue }: DownloadButtonProps) : React.ReactElement{
     const handleDownload = () => {
         const downloadContents = jsxToHtml( editorValue );
 
