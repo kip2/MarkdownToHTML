@@ -25,6 +25,7 @@ github markdownの形式に対応しています(プラグイン依存のため�
 
 GithubのMarkdown形式の入力に対応しています
 
+
 入力形式は、本ページで表示のサンプル、もしくは以下のページを参考にしてください
 
 [Github Markdown Manual](https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
@@ -54,7 +55,7 @@ GithubのMarkdown形式の入力に対応しています
 
 の、2つの形式で表示を切り替えることができます
 
-[切り替えボタン参考アニメーション](/doc/image2.gif)
+![切り替えボタン参考アニメーション](/doc/image2.gif)
 
 ---
 
