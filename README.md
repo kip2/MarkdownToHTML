@@ -71,3 +71,9 @@ GithubのMarkdown形式の入力に対応しています
 - [@monaco-editor/react](https://www.npmjs.com/package/@monaco-editor/react)
 - [react-markdown](https://www.npmjs.com/package/react-markdown?activeTab=readme)
 - [styled-components](https://www.npmjs.com/package/styled-components)
+
+---
+
+# 参考文献
+
+[Reactハンズオンラーニング](https://www.oreilly.co.jp//books/9784873119380/)
