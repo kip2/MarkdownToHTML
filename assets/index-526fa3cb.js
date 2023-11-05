@@ -140,12 +140,12 @@ height: 90vh;
 `;function z5({editorValue:e}){const t=()=>{const n=BN(e),r=new Blob([n],{type:"text/html"}),a=URL.createObjectURL(r),i=document.createElement("a");i.href=a,i.download="download.html",document.body.appendChild(i),i.click(),document.body.removeChild(i),URL.revokeObjectURL(a)};return ke.jsx(B5,{onClick:t,children:"Download HTML"})}const G5=`# GitHub Markdown Example
 
 ---
-# Usage
+## Usage
 [Github Markdown Manual](https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ---
 
-# Example
+## Example
 
 This is an example of **GitHub flavored Markdown**.
 
@@ -215,4 +215,4 @@ console.log(greeting);
   margin:0px;
   margin-bottom:10px;
   color: #000080;
-`;function W5(){const[e,t]=X.useState(!1),[n,r]=X.useState(G5);return ke.jsxs(ke.Fragment,{children:[ke.jsx(V5,{children:"Markdown to HTML"}),ke.jsxs(j5,{children:[ke.jsx(z5,{editorValue:n}),ke.jsx(H5,{onClick:()=>{t(!e)},children:e?"Markdownに切り替え":"HTMLに切り替え"})]}),ke.jsxs(q5,{children:[ke.jsx(I6,{editorValue:n,setEditorValue:r}),ke.jsx(vW,{editorValue:n,isMarkdownHidden:e}),ke.jsx($5,{editorValue:n,isMarkdownHidden:e})]})]})}em.createRoot(document.getElementById("root")).render(ke.jsx(Me.StrictMode,{children:ke.jsx(W5,{})}));
+`;function W5(){const[e,t]=X.useState(!1),[n,r]=X.useState(G5);return ke.jsxs(ke.Fragment,{children:[ke.jsx(V5,{children:"Markdown to HTML"}),ke.jsxs(j5,{children:[ke.jsx(z5,{editorValue:n}),ke.jsx(H5,{onClick:()=>{t(!e)},children:e?"Previewで表示":"HTMLで表示"})]}),ke.jsxs(q5,{children:[ke.jsx(I6,{editorValue:n,setEditorValue:r}),ke.jsx(vW,{editorValue:n,isMarkdownHidden:e}),ke.jsx($5,{editorValue:n,isMarkdownHidden:e})]})]})}em.createRoot(document.getElementById("root")).render(ke.jsx(Me.StrictMode,{children:ke.jsx(W5,{})}));
