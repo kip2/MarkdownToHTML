@@ -27,7 +27,10 @@ export default function HTMLPreview({ editorValue, isMarkdownHidden=true }: HTML
   );
     return (
         <Wrapper hidden={!isMarkdownHidden}>
+          <pre>
           {resultHtml}
+          </pre>
         </Wrapper>
     );
-}
+
+  }
