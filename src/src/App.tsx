@@ -1,7 +1,7 @@
+import { useState } from 'react';
 import './App.css'
 import "sanitize.css"
 import styled from "styled-components";
-import { useState } from 'react';
 import MakdownPreview from './MarkdownPreview';
 import MonacoPreview from './MonacoPreview'
 import HTMLPreview from './HTMLPreview';
