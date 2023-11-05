@@ -2,12 +2,12 @@ export const ExampleTemplate =
 `# GitHub Markdown Example
 
 ---
-# Usage
+## Usage
 [Github Markdown Manual](https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ---
 
-# Example
+## Example
 
 This is an example of **GitHub flavored Markdown**.
 
