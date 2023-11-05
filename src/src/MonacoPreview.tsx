@@ -1,7 +1,12 @@
 import './App.css'
 import Editor from "@monaco-editor/react"
 
-function MonacoPreview({ editorValue, setEditorValue }) {
+type MonacoPreviewProps = {
+  editorValue: string
+  setEditorValue: (value: string) => void 
+}
+
+function MonacoPreview({ editorValue, setEditorValue }: MonacoPreviewProps) {
   return (
     <>
         <Editor 
@@ -10,7 +15,10 @@ function MonacoPreview({ editorValue, setEditorValue }) {
             defaultLanguage="markdown" 
             value={editorValue}
             onChange={
-                (value:string, e:IModelContentChangeEvent) => setEditorValue(value)
+                (value:string | undefined) => {
+                  if (value !== undefined)
+                  setEditorValue(value)
+                }
             }
         />
     </>

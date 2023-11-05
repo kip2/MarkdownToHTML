@@ -14,7 +14,12 @@ const Wrapper = styled.div`
   overflow-y: auto;
 `;
 
-export default function MakdownPreview({ editorValue, isMarkdownHidden=false }) {
+type MarkdownPreview = {
+  editorValue: string
+  isMarkdownHidden: boolean
+}
+
+export default function MakdownPreview({ editorValue, isMarkdownHidden=false }: MarkdownPreview) {
     return (
         <Wrapper hidden={isMarkdownHidden}>
             <ReactMarkdown 
@@ -26,7 +31,6 @@ export default function MakdownPreview({ editorValue, isMarkdownHidden=false }) 
                   const match = /language-(\w+)/.exec(className || '')
                   return match ? (
                     <SyntaxHighlighter
-                      {...rest}
                       children={String(children).replace(/\n$/,'')}
                       style={coy}
                       language={match[1]}
