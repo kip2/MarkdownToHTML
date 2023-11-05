@@ -4,7 +4,7 @@ Markdownを入力したら、HTMLへ変換するアプリです
 
 github markdownの形式に対応しています(プラグイン依存のため、一部は非対応)
 
-![Welcome!]("./doc/image.gif")
+![Welcome!](/doc/image.gif)
 
 
 # 使用技術
