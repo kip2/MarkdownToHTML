@@ -8,7 +8,7 @@ import HTMLPreview from './HTMLPreview';
 import DownloadButton from "./DownloadButton";
 import { ExampleTemplate } from './ExampleTemplate';
 
-const Wrapper = styled.div`
+const Preview = styled.div`
   display: flex;
 `;
 
@@ -47,7 +47,7 @@ function App() {
           }
         </ToggleButton>
       </Buttons>
-      <Wrapper>
+      <Preview>
         <MonacoPreview 
           editorValue={editorValue}
           setEditorValue={setEditorValue}
@@ -60,7 +60,7 @@ function App() {
           editorValue={editorValue}
           isMarkdownHidden={isMarkdownHidden}
         />
-      </Wrapper>
+      </Preview>
     </>
   )
 }
